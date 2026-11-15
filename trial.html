@@ -1,0 +1,274 @@
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="format-detection" content="telephone=no">
+<title>粤语体验课 · 原来你早就识讲粤语（40 分钟）</title><style>:root{--navy:#17324d;--ink:#1f2933;--mute:#6b7785;--line:#e3e8ee;--bg:#f6f8fa;--card:#fff;--teal:#2f9e8f;
+--t-tong:#2f6fb5;--t-yue:#2e8b57;--t-gu:#b7791f;--t-wai:#7b4bb3;--t-da:#6b7280;--t-fa:#c2416b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif}
+.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:16px;padding:10px 20px;background:var(--navy);color:#fff}
+.brand{font-weight:700;white-space:nowrap}
+.top nav{display:flex;gap:4px;flex:1;overflow-x:auto}
+.top nav a{color:#c9d6e2;text-decoration:none;padding:4px 12px;border-radius:999px;white-space:nowrap;font-size:14px}
+.top nav a.on,.top nav a:hover{background:rgba(255,255,255,.16);color:#fff}
+#slow{border:1px solid rgba(255,255,255,.4);background:transparent;color:#fff;border-radius:999px;padding:4px 14px;font:inherit;font-size:14px;cursor:pointer;white-space:nowrap}
+#slow[aria-pressed=true]{background:var(--teal);border-color:var(--teal)}
+.wrap{display:grid;grid-template-columns:220px minmax(0,1fr);gap:28px;max-width:1180px;margin:0 auto;padding:24px 20px 80px}
+.side{position:sticky;top:64px;align-self:start;max-height:calc(100vh - 80px);overflow:auto;display:flex;flex-direction:column;gap:2px;font-size:14px}
+.side a{color:var(--mute);text-decoration:none;padding:5px 10px;border-radius:6px;border-left:3px solid transparent}
+.side a:hover{background:#e9eef3;color:var(--ink)}
+.side:empty{display:none}
+h1{font-size:30px;line-height:1.25;margin:8px 0 12px;color:var(--navy);text-wrap:balance}
+main>p{max-width:46em}
+.lesson{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px 28px 20px;margin:28px 0}
+.lh{border-bottom:2px solid var(--navy);padding-bottom:14px;margin-bottom:16px}
+.chip{display:inline-block;background:var(--teal);color:#fff;font-size:13px;font-weight:600;padding:2px 12px;border-radius:999px;letter-spacing:.04em}
+.lh h2{font-size:26px;margin:8px 0 0;color:var(--navy);line-height:1.3}
+.lh .sub{margin:2px 0 0;color:var(--mute)}
+.meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14.5px;color:#3d4a57;background:#f1f5f8;border-radius:8px;padding:10px 14px;margin:0 0 8px}
+h3{font-size:17px;margin:26px 0 10px;color:var(--navy);display:flex;align-items:center;gap:8px}
+h3::before{content:"";width:4px;height:16px;background:var(--teal);border-radius:2px}
+ul{margin:8px 0;padding-left:1.25em}
+li{margin:5px 0;max-width:48em}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th{background:var(--navy);color:#fff;text-align:left;padding:9px 12px;font-weight:600}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:nth-child(even){background:#f8fafb}
+.vocab td.yue{white-space:nowrap;font-size:17px}
+.vocab td.yue b{font-weight:600}
+.pos{color:#8b96a3;font-size:13px}
+.en{color:#4a5663}
+.src{color:var(--t-wai);white-space:nowrap}
+.jpc{border-left:3px solid var(--t-da);min-width:150px}
+.jpc .jp{display:block;font-size:15px;color:var(--ink)}
+.jpc .tag{display:block;font-size:12.5px;color:var(--t-da)}
+.t-同{border-left-color:var(--t-tong)}.t-同 .tag{color:var(--t-tong)}
+.t-粤{border-left-color:var(--t-yue)}.t-粤 .tag{color:var(--t-yue)}
+.t-古{border-left-color:var(--t-gu)}.t-古 .tag{color:var(--t-gu)}
+.t-外{border-left-color:var(--t-wai)}.t-外 .tag{color:var(--t-wai)}
+.t-法{border-left-color:var(--t-fa)}.t-法 .tag{color:var(--t-fa)}
+.jp,i.jp,.w i{font-style:normal;font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace;font-size:.86em;color:#52606d;letter-spacing:-.01em}
+.play{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;border:0;background:#e6f3f1;color:var(--teal);cursor:pointer;vertical-align:middle;margin-right:8px;flex:none}
+.play:hover,.play.on{background:var(--teal);color:#fff}
+.w{cursor:pointer;border-bottom:1px dashed #9fcfc8;white-space:nowrap}
+.w:hover,.w.on{background:#e6f3f1}
+.w b{font-weight:600}
+.dlg{border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.playall{display:flex;align-items:center;gap:6px;width:100%;border:0;border-bottom:1px solid var(--line);background:#f1f5f8;color:var(--navy);font:inherit;font-size:14px;padding:7px 14px;cursor:pointer}
+.playall:hover{background:#e6edf3}
+.line{display:grid;grid-template-columns:30px minmax(0,1.15fr) minmax(0,1fr) 36px;gap:12px;align-items:start;padding:11px 14px;border-bottom:1px solid var(--line)}
+.line:last-child{border-bottom:0}
+.line.on{background:#eef8f6}
+.who{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:13px;font-weight:600;margin-top:2px}
+.line:nth-child(odd) .who{background:var(--teal)}
+.say .yue{font-size:18px;font-weight:600;line-height:1.45}
+.tr{font-size:14.5px;color:#3d4a57}
+.tr .en{font-size:13.5px;color:var(--mute)}
+.line .play{margin:0}
+.scroll{overflow-x:auto}
+.plain td,.plain th{font-size:14.5px}
+.foot{color:var(--mute);font-size:13px;margin-top:40px}
+.pager{display:none}
+.side a.on{color:var(--navy);font-weight:600;border-left-color:var(--teal);background:#e9eef3}
+html{-webkit-text-size-adjust:100%}
+button,.w,a{-webkit-tap-highlight-color:transparent}
+@media screen and (max-width:860px){
+html{scroll-padding-top:104px}
+body{font-size:16px}
+.top{padding:0 12px;height:46px;gap:8px}
+.brand{display:none}
+.top nav{gap:2px;scrollbar-width:none}
+.top nav::-webkit-scrollbar,.side::-webkit-scrollbar{display:none}
+.top nav a{padding:5px 12px;font-size:15px}
+#slow{position:fixed;right:14px;bottom:calc(76px + env(safe-area-inset-bottom));z-index:6;width:52px;height:52px;padding:0;border-radius:50%;border:0;background:var(--navy);color:#fff;font-size:14px;font-weight:600;box-shadow:0 4px 14px rgba(23,50,77,.3)}
+body:not(.single) #slow{bottom:calc(20px + env(safe-area-inset-bottom))}
+.wrap{display:block;padding:0 0 calc(96px + env(safe-area-inset-bottom))}
+.side{position:sticky;top:46px;z-index:4;flex-direction:row;gap:8px;overflow-x:auto;max-height:none;padding:9px 12px;background:var(--bg);border-bottom:1px solid var(--line);scrollbar-width:none}
+.side a{flex:none;white-space:nowrap;border:1px solid var(--line);border-radius:999px;background:#fff;padding:5px 13px;font-size:14px;color:#3d4a57}
+.side a.on{background:var(--navy);border-color:var(--navy);color:#fff}
+main{padding:0 12px}
+h1{font-size:22px;margin:16px 4px 8px}
+main>p{font-size:15px;margin:8px 4px;color:#3d4a57}
+.single main>h1,.single main>p:not(.foot){display:none}
+.single .lesson{display:none}
+.single .lesson.cur{display:block}
+.lesson{padding:18px 14px 14px;margin:12px 0;border-radius:12px}
+.lh{padding-bottom:12px;margin-bottom:12px}
+.lh h2{font-size:22px}
+.meta{flex-direction:column;gap:4px;font-size:14.5px;padding:10px 12px}
+h3{font-size:17px;margin:24px 0 10px}
+ul{padding-left:1.15em}
+li{margin:8px 0}
+.w{white-space:normal}
+.play{width:40px;height:40px;margin-right:10px}
+.play svg{width:19px;height:19px}
+.vocab,.vocab tbody{display:block}
+.vocab thead{display:none}
+.vocab tr{display:grid;grid-template-columns:50px auto minmax(0,1fr);column-gap:0;row-gap:2px;padding:11px 0;border-bottom:1px solid var(--line);background:none!important;position:relative}
+.vocab tr:last-child{border-bottom:0}
+.vocab td{border:0;padding:0}
+.vocab td.yue{grid-column:1/-1;grid-row:1;display:flex;align-items:center;font-size:19px;white-space:normal}
+.vocab td.yue .pos{margin-left:8px}
+.vocab .jpc{border-left:0;min-width:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;grid-column:2/-1;grid-row:2}
+.vocab .jpc .jp{font-size:15px;color:#3d4a57}
+.vocab .jpc .tag{font-size:12px}
+.vocab td:nth-child(2){grid-column:2;grid-row:3;font-size:15px;max-width:46vw}
+.vocab td.en{grid-column:3;grid-row:3;font-size:14px;padding-left:12px;align-self:baseline}
+.dlg{border-radius:12px}
+.playall{padding:12px 14px;font-size:15px;justify-content:center}
+.line{grid-template-columns:28px minmax(0,1fr) 40px;gap:4px 10px;padding:13px 12px}
+.say .yue{font-size:18px}
+.say .jp{font-size:13.5px;line-height:1.5;word-break:break-word}
+.tr{grid-column:2;grid-row:2;font-size:14.5px}
+.line .play{grid-column:3;grid-row:1;margin:0}
+.scroll{margin:0 -14px;padding:0 14px}
+.plain{min-width:560px}
+.plain td,.plain th{font-size:14px;padding:8px 10px}
+.single .pager{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:5;gap:10px;align-items:center;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line)}
+.pager button{flex:1;height:44px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--navy);font:inherit;font-size:15px;font-weight:600}
+.pager button#next{background:var(--navy);border-color:var(--navy);color:#fff}
+.pager button:disabled{opacity:.35}
+.pager span{flex:none;min-width:56px;text-align:center;color:var(--mute);font-size:14px}
+.foot{margin:24px 4px;font-size:12.5px}
+.embed .top{display:none}
+.embed .side{top:0}
+.embed{--embed:1}
+html:has(.embed){scroll-padding-top:58px}
+}
+@page{size:A4;margin:14mm 13mm}
+@media print{*{-webkit-print-color-adjust:exact;print-color-adjust:exact}body{font-size:13px}h1{font-size:24px}.lh h2{font-size:21px}table{font-size:12.5px}.vocab td.yue{font-size:14px}.say .yue{font-size:14.5px}.tr{font-size:12px}.tr .en{font-size:11.5px}.jpc{min-width:120px}h3{break-after:avoid}.lesson{margin:0}.lesson:first-of-type{break-before:auto}.dlg{border:0}.line{grid-template-columns:26px minmax(0,1.15fr) minmax(0,1fr);padding:7px 4px}td,th{padding:6px 9px}.top,.side,.play,.playall,#slow{display:none!important}.wrap{display:block;padding:0}body{background:#fff}.lesson{border:0;padding:0;break-before:page}.w{border:0}tr,.line{break-inside:avoid}}
+</style></head><body>
+<div class="top"><span class="brand">粤语三级课程</span><nav><a href="index.html">总览</a><a href="trial.html" class="on">体验课</a><a href="beginner.html">初级</a><a href="middle.html">中级</a><a href="senior.html">高级</a></nav><button id="slow" aria-pressed="false">慢速</button></div>
+<div class="wrap"><aside class="side"><a href="#s1">课堂流程</a><a href="#s2">环节一 · 破冰：你早就识讲粤语（5 分钟）</a><a href="#s3">环节二 · 小故事：粤语从哪里来（4 分钟）</a><a href="#s4">环节三 · 六个声调：3 9 4 0 5 2（10 分钟）</a><a href="#s5">环节四 · 场景：点一杯冻柠茶（12 分钟）</a><a href="#s6">环节五 · 角色扮演（6 分钟）</a><a href="#s7">环节六 · 小结与课程介绍（3 分钟）</a><a href="#s8">老师备忘</a></aside><main><h1>粤语体验课 · 原来你早就识讲粤语（40 分钟）</h1>
+<p>面向完全零基础的学生。不讲拼音表，不讲语法。一节课只做三件事：发现自己已经会的粤语词、用六个数字学会六个声调、在“茶餐厅”点到一杯冻柠茶。</p>
+<section class="lesson" id="s1"><header class="lh"><h2>课堂流程</h2></header>
+<div class="meta"><span><strong>对象</strong>：零基础，1–8 人</span><span><strong>学完能做</strong>：读出六个声调；用五句粤语在茶餐厅点一杯饮料</span><span><strong>准备</strong>：数字卡 0–9、茶餐厅餐牌一张、手机录音</span></div>
+<div class="scroll"><table class="plain"><thead><tr><th>时间</th><th>环节</th><th>老师做什么</th><th>学生做什么</th></tr></thead><tbody><tr><td>0–5′</td><td>破冰：你早就识讲粤语</td><td>展示 10 个普通话里的粤语词，逐个示范粤语读法</td><td>猜意思、跟读</td></tr><tr><td>5–9′</td><td>小故事：粤语从哪里来</td><td>讲 1 分钟历史，带读一首唐诗</td><td>听普通话和粤语的押韵差别</td></tr><tr><td>9–19′</td><td>六个声调：3 9 4 0 5 2</td><td>用数字和手势教六调，玩“听数举手”</td><td>跟读、听辨、读自己的电话尾号</td></tr><tr><td>19–31′</td><td>场景：点一杯冻柠茶</td><td>示范五句对话，逐句带读，纠两个音</td><td>跟读、替换饮料名</td></tr><tr><td>31–37′</td><td>角色扮演</td><td>扮茶餐厅伙计，逐个“落单”</td><td>每人完整点一次餐</td></tr><tr><td>37–40′</td><td>小结与课程介绍</td><td>回顾三样收获，介绍初级课，布置小任务</td><td>录一句粤语带走</td></tr></tbody></table></div>
+</section>
+<section class="lesson" id="s2"><header class="lh"><h2>环节一 · 破冰：你早就识讲粤语（5 分钟）</h2></header>
+<ul>
+<li>开场白：“你觉得自己识几多粤语？零？其实你至少识十个词。”</li>
+<li>逐个出示下面的词，先让学生用普通话读，再示范粤语读法，全班跟读两遍。</li>
+<li>目的是破除“粤语很难”的印象，不纠音，只鼓励开口。</li>
+</ul>
+<h3>词汇表</h3>
+<table class="vocab"><thead><tr><th>粤语</th><th>普通话</th><th>English</th><th>粤拼 · 词类</th></tr></thead><tbody><tr><td class="yue"><button class="play" data-t="埋单" data-a="trial/S02/v01_maai4-daan1.m4a" aria-label="播放 埋单"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>埋单</b> <span class="pos">[动]</span></td><td>买单；结账</td><td class="en">to pay the bill</td><td class="jpc t-粤"><span class="jp">maai4 daan1</span><span class="tag">粤 · 粤语特有词</span></td></tr><tr><td class="yue"><button class="play" data-t="搞掂" data-a="trial/S02/v02_gaau2-dim6.m4a" aria-label="播放 搞掂"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>搞掂</b> <span class="pos">[动]</span></td><td>搞定</td><td class="en">to get it done</td><td class="jpc t-粤"><span class="jp">gaau2 dim6</span><span class="tag">粤 · 粤语特有词</span></td></tr><tr><td class="yue"><button class="play" data-t="靓仔" data-a="trial/S02/v03_leng3-zai2.m4a" aria-label="播放 靓仔"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>靓仔</b> <span class="pos">[名]</span></td><td>帅哥</td><td class="en">handsome guy</td><td class="jpc t-粤"><span class="jp">leng3 zai2</span><span class="tag">粤 · 粤语特有词</span></td></tr><tr><td class="yue"><button class="play" data-t="靓女" data-a="trial/S02/v04_leng3-neoi2.m4a" aria-label="播放 靓女"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>靓女</b> <span class="pos">[名]</span></td><td>美女</td><td class="en">pretty girl</td><td class="jpc t-粤"><span class="jp">leng3 neoi2</span><span class="tag">粤 · 粤语特有词</span></td></tr><tr><td class="yue"><button class="play" data-t="巴士" data-a="trial/S02/v05_baa1-si2.m4a" aria-label="播放 巴士"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>巴士</b> <span class="pos">[名]</span></td><td>公交车</td><td class="en">bus <span class="src">&lt; bus</span></td><td class="jpc t-外"><span class="jp">baa1 si2</span><span class="tag">外 · 外来词</span></td></tr><tr><td class="yue"><button class="play" data-t="的士" data-a="trial/S02/v06_dik1-si2.m4a" aria-label="播放 的士"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>的士</b> <span class="pos">[名]</span></td><td>出租车</td><td class="en">taxi <span class="src">&lt; taxi</span></td><td class="jpc t-外"><span class="jp">dik1 si2</span><span class="tag">外 · 外来词</span></td></tr><tr><td class="yue"><button class="play" data-t="打工" data-a="trial/S02/v07_daa2-gung1.m4a" aria-label="播放 打工"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>打工</b> <span class="pos">[动]</span></td><td>打工；上班</td><td class="en">to work for someone</td><td class="jpc t-粤"><span class="jp">daa2 gung1</span><span class="tag">粤 · 粤语特有词</span></td></tr><tr><td class="yue"><button class="play" data-t="炒鱿鱼" data-a="trial/S02/v08_caau2-jau4-jyu2.m4a" aria-label="播放 炒鱿鱼"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>炒鱿鱼</b> <span class="pos">[表达]</span></td><td>解雇</td><td class="en">to fire someone</td><td class="jpc t-粤"><span class="jp">caau2 jau4 jyu2</span><span class="tag">粤 · 粤语特有词</span></td></tr><tr><td class="yue"><button class="play" data-t="生猛" data-a="trial/S02/v09_saang1-maang5.m4a" aria-label="播放 生猛"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>生猛</b> <span class="pos">[形]</span></td><td>生猛；有活力</td><td class="en">lively; fresh</td><td class="jpc t-粤"><span class="jp">saang1 maang5</span><span class="tag">粤 · 粤语特有词</span></td></tr><tr><td class="yue"><button class="play" data-t="唔该" data-a="trial/S02/v10_m4-goi1.m4a" aria-label="播放 唔该"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>唔该</b> <span class="pos">[表达]</span></td><td>谢谢；劳驾</td><td class="en">thanks; excuse me</td><td class="jpc t-粤"><span class="jp">m4 goi1</span><span class="tag">粤 · 粤语特有词</span></td></tr></tbody></table>
+</section>
+<section class="lesson" id="s3"><header class="lh"><h2>环节二 · 小故事：粤语从哪里来（4 分钟）</h2></header>
+<ul>
+<li>一分钟版本：两千多年前，秦汉的军队和移民从中原来到岭南，带来了当时的汉语，和本地百越人的语言慢慢融合；到唐宋时期，粤语基本成形。所以粤语保留了不少古代汉语的读音和用词。</li>
+<li>现场证明：柳宗元的《江雪》，韵脚是“绝、灭、雪”。先请一位学生用普通话读，再由老师用粤语读，让大家听韵脚。</li>
+<li>讲解一句话：这三个字在古代都是短促的“入声”，普通话已经没有入声，粤语还保留着，所以粤语读起来三个字都以 -t 急收，更整齐。</li>
+<li>提醒：不要说“粤语就是唐朝话”，准确的说法是“粤语保留了较多中古汉语的特点”。</li>
+</ul>
+<h3>朗读：《江雪》（唐 · 柳宗元）</h3>
+<div class="dlg"><button class="playall"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg> 连续播放</button><div class="line"><span class="who">1</span><div class="say"><div class="yue">千山鸟飞绝，</div><div class="jp">cin1 saan1 niu5 fei1 zyut6,</div></div><div class="tr"><div>千山鸟飞绝，</div><div class="en">A thousand mountains, no bird in flight;</div></div><button class="play" data-t="千山鸟飞绝，" data-a="trial/S03/d01_cin1-saan1-niu5-fei1-zyut6.m4a" aria-label="播放 千山鸟飞绝，"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button></div><div class="line"><span class="who">2</span><div class="say"><div class="yue">万径人踪灭。</div><div class="jp">maan6 ging3 jan4 zung1 mit6.</div></div><div class="tr"><div>万径人踪灭。</div><div class="en">Ten thousand paths, no trace of man.</div></div><button class="play" data-t="万径人踪灭。" data-a="trial/S03/d02_maan6-ging3-jan4-zung1-mit6.m4a" aria-label="播放 万径人踪灭。"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button></div><div class="line"><span class="who">3</span><div class="say"><div class="yue">孤舟蓑笠翁，</div><div class="jp">gu1 zau1 so1 lap1 jung1,</div></div><div class="tr"><div>孤舟蓑笠翁，</div><div class="en">A lone boat, an old man in straw cloak,</div></div><button class="play" data-t="孤舟蓑笠翁，" data-a="trial/S03/d03_gu1-zau1-so1-lap1-jung1.m4a" aria-label="播放 孤舟蓑笠翁，"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button></div><div class="line"><span class="who">4</span><div class="say"><div class="yue">独钓寒江雪。</div><div class="jp">duk6 diu3 hon4 gong1 syut3.</div></div><div class="tr"><div>独钓寒江雪。</div><div class="en">Fishing alone in the cold river snow.</div></div><button class="play" data-t="独钓寒江雪。" data-a="trial/S03/d04_duk6-diu3-hon4-gong1-syut3.m4a" aria-label="播放 独钓寒江雪。"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button></div></div>
+</section>
+<section class="lesson" id="s4"><header class="lh"><h2>环节三 · 六个声调：3 9 4 0 5 2（10 分钟）</h2></header>
+<ul>
+<li>板书六个数字：<strong>3 9 4 0 5 2</strong>。告诉学生：这六个数字的粤语读音，正好是第 1 到第 6 调。</li>
+<li>配手势带读三遍：第 1 调手放额头（高平），第 2 调从腰升到头（高升），第 3 调手放胸口（中平），第 4 调手往下压（低降），第 5 调从腰升到胸（低升），第 6 调手放腰（低平）。</li>
+<li>游戏“听数举手”：老师随机读一个数字，学生用手指比出它是第几调；再反过来，老师比手势，学生读出数字。</li>
+<li>应用：每人用粤语读出自己手机号的最后四位（需要用到的其他数字见下表，现场带读）。</li>
+<li>只纠一个音：第 1 调（<span class="w" data-t="三" data-a="trial/S04/x01_saam1.m4a" role="button" tabindex="0"><b>三</b> <i>saam1</i></span>）必须一直保持高平，不要读成普通话第四声往下掉。</li>
+</ul>
+<h3>词汇表</h3>
+<table class="vocab"><thead><tr><th>粤语</th><th>普通话</th><th>English</th><th>粤拼 · 词类</th></tr></thead><tbody><tr><td class="yue"><button class="play" data-t="三" data-a="trial/S04/x01_saam1.m4a" aria-label="播放 三"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>三</b> <span class="pos">[数]</span></td><td>三（第 1 调 · 高平）</td><td class="en">three</td><td class="jpc t-同"><span class="jp">saam1</span><span class="tag">同 · 同形词</span></td></tr><tr><td class="yue"><button class="play" data-t="九" data-a="trial/S04/v01_gau2.m4a" aria-label="播放 九"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>九</b> <span class="pos">[数]</span></td><td>九（第 2 调 · 高升）</td><td class="en">nine</td><td class="jpc t-同"><span class="jp">gau2</span><span class="tag">同 · 同形词</span></td></tr><tr><td class="yue"><button class="play" data-t="四" data-a="trial/S04/v02_sei3.m4a" aria-label="播放 四"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>四</b> <span class="pos">[数]</span></td><td>四（第 3 调 · 中平）</td><td class="en">four</td><td class="jpc t-同"><span class="jp">sei3</span><span class="tag">同 · 同形词</span></td></tr><tr><td class="yue"><button class="play" data-t="零" data-a="trial/S04/v03_ling4.m4a" aria-label="播放 零"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>零</b> <span class="pos">[数]</span></td><td>零（第 4 调 · 低降）</td><td class="en">zero</td><td class="jpc t-同"><span class="jp">ling4</span><span class="tag">同 · 同形词</span></td></tr><tr><td class="yue"><button class="play" data-t="五" data-a="trial/S04/v04_ng5.m4a" aria-label="播放 五"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>五</b> <span class="pos">[数]</span></td><td>五（第 5 调 · 低升）</td><td class="en">five</td><td class="jpc t-同"><span class="jp">ng5</span><span class="tag">同 · 同形词</span></td></tr><tr><td class="yue"><button class="play" data-t="二" data-a="trial/S04/v05_ji6.m4a" aria-label="播放 二"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>二</b> <span class="pos">[数]</span></td><td>二（第 6 调 · 低平）</td><td class="en">two</td><td class="jpc t-同"><span class="jp">ji6</span><span class="tag">同 · 同形词</span></td></tr><tr><td class="yue"><button class="play" data-t="一" data-a="trial/S04/v06_jat1.m4a" aria-label="播放 一"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>一</b> <span class="pos">[数]</span></td><td>一</td><td class="en">one</td><td class="jpc t-同"><span class="jp">jat1</span><span class="tag">同 · 同形词</span></td></tr><tr><td class="yue"><button class="play" data-t="六" data-a="trial/S04/v07_luk6.m4a" aria-label="播放 六"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>六</b> <span class="pos">[数]</span></td><td>六</td><td class="en">six</td><td class="jpc t-同"><span class="jp">luk6</span><span class="tag">同 · 同形词</span></td></tr><tr><td class="yue"><button class="play" data-t="七" data-a="trial/S04/v08_cat1.m4a" aria-label="播放 七"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>七</b> <span class="pos">[数]</span></td><td>七</td><td class="en">seven</td><td class="jpc t-同"><span class="jp">cat1</span><span class="tag">同 · 同形词</span></td></tr><tr><td class="yue"><button class="play" data-t="八" data-a="trial/S04/v09_baat3.m4a" aria-label="播放 八"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>八</b> <span class="pos">[数]</span></td><td>八</td><td class="en">eight</td><td class="jpc t-同"><span class="jp">baat3</span><span class="tag">同 · 同形词</span></td></tr></tbody></table>
+</section>
+<section class="lesson" id="s5"><header class="lh"><h2>环节四 · 场景：点一杯冻柠茶（12 分钟）</h2></header>
+<ul>
+<li>设定：大家现在走进香港的一间茶餐厅，伙计走过来了。</li>
+<li>先完整示范一遍对话，再逐句带读（每句三遍：慢、慢、正常速度）。</li>
+<li>替换练习：把“冻柠茶”换成下面“替换词”里的其他饮料和小食。</li>
+<li>只纠两个音：<span class="w" data-t="唔该" data-a="trial/S05/x01_m4-goi1.m4a" role="button" tabindex="0"><b>唔该</b> <i>m4 goi1</i></span> 的“唔”是闭着嘴哼出来的，不是“wu”；<span class="w" data-t="冻柠茶" data-a="trial/S05/x02_dung3-ning2-caa4.m4a" role="button" tabindex="0"><b>冻柠茶</b> <i>dung3 ning2 caa4</i></span> 的“茶”嘴要张大。</li>
+</ul>
+<h3>情景对话：一杯冻柠茶，唔该</h3>
+<div class="dlg"><button class="playall"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg> 连续播放</button><div class="line"><span class="who">A</span><div class="say"><div class="yue">你好，饮咩呀？</div><div class="jp">nei5 hou2, jam2 me1 aa3?</div></div><div class="tr"><div>你好，喝什么？</div><div class="en">Hi, what would you like to drink?</div></div><button class="play" data-t="你好，饮咩呀？" data-a="trial/S05/d01_nei5-hou2-jam2-me1-aa3.m4a" aria-label="播放 你好，饮咩呀？"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button></div><div class="line"><span class="who">B</span><div class="say"><div class="yue">一杯冻柠茶，唔该。</div><div class="jp">jat1 bui1 dung3 ning2 caa4, m4 goi1.</div></div><div class="tr"><div>一杯冰柠檬茶，谢谢。</div><div class="en">An iced lemon tea, please.</div></div><button class="play" data-t="一杯冻柠茶，唔该。" data-a="trial/S05/d02_jat1-bui1-dung3-ning2-caa4-m4-goi1.m4a" aria-label="播放 一杯冻柠茶，唔该。"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button></div><div class="line"><span class="who">A</span><div class="say"><div class="yue">要唔要少甜？</div><div class="jp">jiu3 m4 jiu3 siu2 tim4?</div></div><div class="tr"><div>要不要少糖？</div><div class="en">Less sugar?</div></div><button class="play" data-t="要唔要少甜？" data-a="trial/S05/d03_jiu3-m4-jiu3-siu2-tim4.m4a" aria-label="播放 要唔要少甜？"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button></div><div class="line"><span class="who">B</span><div class="say"><div class="yue">要，少甜。几多钱呀？</div><div class="jp">jiu3, siu2 tim4. gei2 do1 cin2 aa3?</div></div><div class="tr"><div>要，少糖。多少钱？</div><div class="en">Yes, less sugar. How much is it?</div></div><button class="play" data-t="要，少甜。几多钱呀？" data-a="trial/S05/d04_jiu3-siu2-tim4-gei2-do1-cin2-aa3.m4a" aria-label="播放 要，少甜。几多钱呀？"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button></div><div class="line"><span class="who">A</span><div class="say"><div class="yue">二十蚊。</div><div class="jp">ji6 sap6 man1.</div></div><div class="tr"><div>二十块。</div><div class="en">Twenty dollars.</div></div><button class="play" data-t="二十蚊。" data-a="trial/S05/d05_ji6-sap6-man1.m4a" aria-label="播放 二十蚊。"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button></div><div class="line"><span class="who">B</span><div class="say"><div class="yue">好，唔该晒！</div><div class="jp">hou2, m4 goi1 saai3!</div></div><div class="tr"><div>好，太感谢了！</div><div class="en">Okay, thanks a lot!</div></div><button class="play" data-t="好，唔该晒！" data-a="trial/S05/d06_hou2-m4-goi1-saai3.m4a" aria-label="播放 好，唔该晒！"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button></div></div>
+<h3>替换词</h3>
+<table class="vocab"><thead><tr><th>粤语</th><th>普通话</th><th>English</th><th>粤拼 · 词类</th></tr></thead><tbody><tr><td class="yue"><button class="play" data-t="冻柠茶" data-a="trial/S05/x02_dung3-ning2-caa4.m4a" aria-label="播放 冻柠茶"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>冻柠茶</b> <span class="pos">[名]</span></td><td>冰柠檬茶</td><td class="en">iced lemon tea</td><td class="jpc t-粤"><span class="jp">dung3 ning2 caa4</span><span class="tag">粤 · 粤语特有词</span></td></tr><tr><td class="yue"><button class="play" data-t="热奶茶" data-a="trial/S05/v01_jit6-naai5-caa4.m4a" aria-label="播放 热奶茶"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>热奶茶</b> <span class="pos">[名]</span></td><td>热奶茶</td><td class="en">hot milk tea</td><td class="jpc t-同"><span class="jp">jit6 naai5 caa4</span><span class="tag">同 · 同形词</span></td></tr><tr><td class="yue"><button class="play" data-t="冻咖啡" data-a="trial/S05/v02_dung3-gaa3-fe1.m4a" aria-label="播放 冻咖啡"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>冻咖啡</b> <span class="pos">[名]</span></td><td>冰咖啡</td><td class="en">iced coffee <span class="src">&lt; coffee</span></td><td class="jpc t-外"><span class="jp">dung3 gaa3 fe1</span><span class="tag">外 · 外来词</span></td></tr><tr><td class="yue"><button class="play" data-t="菠萝包" data-a="trial/S05/v03_bo1-lo4-baau1.m4a" aria-label="播放 菠萝包"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>菠萝包</b> <span class="pos">[名]</span></td><td>菠萝包</td><td class="en">pineapple bun</td><td class="jpc t-粤"><span class="jp">bo1 lo4 baau1</span><span class="tag">粤 · 粤语特有词</span></td></tr><tr><td class="yue"><button class="play" data-t="蛋挞" data-a="trial/S05/v04_daan6-taat1.m4a" aria-label="播放 蛋挞"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>蛋挞</b> <span class="pos">[名]</span></td><td>蛋挞</td><td class="en">egg tart <span class="src">&lt; tart</span></td><td class="jpc t-外"><span class="jp">daan6 taat1</span><span class="tag">外 · 外来词</span></td></tr><tr><td class="yue"><button class="play" data-t="几多钱" data-a="trial/S05/v05_gei2-do1-cin2.m4a" aria-label="播放 几多钱"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></button><b>几多钱</b> <span class="pos">[表达]</span></td><td>多少钱</td><td class="en">how much</td><td class="jpc t-搭"><span class="jp">gei2 do1 cin2</span><span class="tag">搭 · 搭配 / 表达</span></td></tr></tbody></table>
+</section>
+<section class="lesson" id="s6"><header class="lh"><h2>环节五 · 角色扮演（6 分钟）</h2></header>
+<ul>
+<li>老师扮伙计，拿着餐牌逐个走到学生面前“落单”；每位学生必须说到：饮品名、“唔该”、“几多钱”。</li>
+<li>人多时两人一组互换角色，老师巡回，只表扬、不打断。</li>
+<li>加分项：能说出价钱里的数字（用环节三学的数字）。</li>
+<li>结束时全班一起说一次：<span class="w" data-t="唔该晒" data-a="trial/S06/x01_m4-goi1-saai3.m4a" role="button" tabindex="0"><b>唔该晒</b> <i>m4 goi1 saai3</i></span>！</li>
+</ul>
+</section>
+<section class="lesson" id="s7"><header class="lh"><h2>环节六 · 小结与课程介绍（3 分钟）</h2></header>
+<ul>
+<li>今日学识咗三样：十个本来就会的粤语词；六个声调（3 9 4 0 5 2）；在茶餐厅点一杯饮料。</li>
+<li>带走一句最地道的客套话：<span class="w" data-t="得闲饮茶" data-a="trial/S07/x01_dak1-haan4-jam2-caa4.m4a" role="button" tabindex="0"><b>得闲饮茶</b> <i>dak1 haan4 jam2 caa4</i></span>（有空一起喝茶）。</li>
+<li>课程介绍（一句话一个级别）：初级“开口讲”——20 个生活场景，学完能旅行、买嘢、搭车；中级“讲得顺”——纠正懒音，能租屋、面试、开会；高级“识文化”——从粤语历史讲到饮茶、粤剧、粤语歌。</li>
+<li>课后小任务：录一条 10 秒语音“一杯冻柠茶，唔该”，发给老师点评——这是第一次个人纠音。</li>
+</ul>
+</section>
+<section class="lesson" id="s8"><header class="lh"><h2>老师备忘</h2></header>
+<ul>
+<li>全程少讲多读：老师讲解不超过 10 分钟，其余时间都让学生开口。</li>
+<li>这节课不出现粤拼表，粤拼只印在讲义上供回家对照；课堂上靠耳朵和手势。</li>
+<li>学生最常问的三个问题及回答：“粤语是不是有九个声调？”——六个调，加上三个入声算九声，初级只需要六个。“要不要学繁体字？”——不需要，教材用简体加少量粤语字。“学多久能开口？”——初级 20 课后能应付旅行和日常消费。</li>
+<li>留一个钩子：下节课（初级第 1 课）会用同一组数字学会说电话号码和价钱。</li>
+</ul>
+</section>
+<p class="foot">发音为电脑合成粤语语音，供跟读参考；纠音以老师示范为准。注音：香港语言学学会粤拼（Jyutping）。</p></main></div>
+<div class="pager"><button id="prev">上一课</button><span id="pos"></span><button id="next">下一课</button></div>
+<script>(function(){
+  var slow=false, cur=null, curEl=null, queue=null;
+  function voice(){
+    var vs=(window.speechSynthesis&&speechSynthesis.getVoices())||[];
+    return vs.find(function(v){return /zh[-_]HK|yue/i.test(v.lang)})||null;
+  }
+  function stop(){
+    if(cur){cur.onended=null;cur.onerror=null;cur.pause();cur=null}
+    if(window.speechSynthesis)speechSynthesis.cancel();
+    if(curEl){curEl.classList.remove('on');var l=curEl.closest('.line');if(l)l.classList.remove('on');curEl=null}
+  }
+  function tts(text,done){
+    if(!window.speechSynthesis){alert('此浏览器不支持语音播放，请用 Chrome、Edge 或 Safari 打开。');done();return}
+    var u=new SpeechSynthesisUtterance(text);u.lang='zh-HK';var v=voice();if(v)u.voice=v;
+    u.rate=slow?0.6:0.9;u.onend=done;u.onerror=done;speechSynthesis.speak(u);
+  }
+  function play(el,done){
+    stop();curEl=el;el.classList.add('on');var l=el.closest('.line');if(l)l.classList.add('on');
+    var fell=false,fin=function(){if(curEl===el)stop();if(done)done()};
+    var fb=function(){if(fell)return;fell=true;cur=null;tts(el.dataset.t,fin)};
+    var a=new Audio();a.preload='auto';a.src='audio/'+el.dataset.a;cur=a;a.playbackRate=slow?0.7:1;
+    a.onended=fin;a.onerror=fb;var p=a.play();if(p&&p.catch)p.catch(fb);
+  }
+  document.addEventListener('click',function(e){
+    var s=e.target.closest('#slow');
+    if(s){slow=!slow;s.setAttribute('aria-pressed',slow);return}
+    var all=e.target.closest('.playall');
+    if(all){var bs=[].slice.call(all.parentNode.querySelectorAll('.line .play'));queue=bs;
+      (function next(){if(queue!==bs||!bs.length)return;var b=bs.shift();play(b,function(){setTimeout(next,350)})})();return}
+    var el=e.target.closest('[data-t]');
+    if(el){queue=null;play(el)}
+  });
+  document.addEventListener('keydown',function(e){
+    if((e.key==='Enter'||e.key===' ')&&e.target.classList&&e.target.classList.contains('w')){e.preventDefault();queue=null;play(e.target)}
+  });
+  if(window.speechSynthesis)speechSynthesis.getVoices();
+  // 手机端：一次只显示一课，底部翻页；?embed=1 隐藏顶栏（内嵌小程序用）
+  var B=document.body, mq=window.matchMedia('(max-width:860px)');
+  if(/[?&]embed=1/.test(location.search))B.classList.add('embed');
+  var secs=[].slice.call(document.querySelectorAll('section.lesson'));
+  var links=[].slice.call(document.querySelectorAll('.side a'));
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pos=document.getElementById('pos'),idx=0;
+  function single(){return B.classList.contains('single')}
+  function show(i,top){
+    if(!secs.length)return;idx=Math.max(0,Math.min(secs.length-1,i));
+    secs.forEach(function(s,k){s.classList.toggle('cur',k===idx)});
+    links.forEach(function(a,k){a.classList.toggle('on',k===idx)});
+    if(links[idx]&&single()){var a=links[idx],p=a.parentNode;p.scrollLeft=a.offsetLeft-(p.clientWidth-a.offsetWidth)/2}
+    if(prev){prev.disabled=idx===0;next.disabled=idx===secs.length-1;pos.textContent=(idx+1)+' / '+secs.length}
+    if(top&&single()){stop();queue=null;window.scrollTo(0,0)}
+  }
+  function fromHash(){var k=secs.findIndex(function(s){return '#'+s.id===location.hash});return k<0?0:k}
+  function mode(){B.classList.toggle('single',mq.matches&&B.classList.contains('paged'));show(fromHash(),false)}
+  function go(i){if(i<0||i>=secs.length)return;try{history.replaceState(null,'','#'+secs[i].id)}catch(e){}show(i,true)}
+  links.forEach(function(a,k){a.addEventListener('click',function(e){if(single()){e.preventDefault();go(k)}else{show(k,false)}})});
+  if(prev){prev.addEventListener('click',function(){go(idx-1)});next.addEventListener('click',function(){go(idx+1)})}
+  window.addEventListener('hashchange',function(){show(fromHash(),true)});
+  if(mq.addEventListener)mq.addEventListener('change',mode);else if(mq.addListener)mq.addListener(mode);
+  mode();
+})();
+</script></body></html>

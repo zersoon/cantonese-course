@@ -1,0 +1,237 @@
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="format-detection" content="telephone=no">
+<title>粤语三级课程 · 总览与大纲</title><style>:root{--navy:#17324d;--ink:#1f2933;--mute:#6b7785;--line:#e3e8ee;--bg:#f6f8fa;--card:#fff;--teal:#2f9e8f;
+--t-tong:#2f6fb5;--t-yue:#2e8b57;--t-gu:#b7791f;--t-wai:#7b4bb3;--t-da:#6b7280;--t-fa:#c2416b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif}
+.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:16px;padding:10px 20px;background:var(--navy);color:#fff}
+.brand{font-weight:700;white-space:nowrap}
+.top nav{display:flex;gap:4px;flex:1;overflow-x:auto}
+.top nav a{color:#c9d6e2;text-decoration:none;padding:4px 12px;border-radius:999px;white-space:nowrap;font-size:14px}
+.top nav a.on,.top nav a:hover{background:rgba(255,255,255,.16);color:#fff}
+#slow{border:1px solid rgba(255,255,255,.4);background:transparent;color:#fff;border-radius:999px;padding:4px 14px;font:inherit;font-size:14px;cursor:pointer;white-space:nowrap}
+#slow[aria-pressed=true]{background:var(--teal);border-color:var(--teal)}
+.wrap{display:grid;grid-template-columns:220px minmax(0,1fr);gap:28px;max-width:1180px;margin:0 auto;padding:24px 20px 80px}
+.side{position:sticky;top:64px;align-self:start;max-height:calc(100vh - 80px);overflow:auto;display:flex;flex-direction:column;gap:2px;font-size:14px}
+.side a{color:var(--mute);text-decoration:none;padding:5px 10px;border-radius:6px;border-left:3px solid transparent}
+.side a:hover{background:#e9eef3;color:var(--ink)}
+.side:empty{display:none}
+h1{font-size:30px;line-height:1.25;margin:8px 0 12px;color:var(--navy);text-wrap:balance}
+main>p{max-width:46em}
+.lesson{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px 28px 20px;margin:28px 0}
+.lh{border-bottom:2px solid var(--navy);padding-bottom:14px;margin-bottom:16px}
+.chip{display:inline-block;background:var(--teal);color:#fff;font-size:13px;font-weight:600;padding:2px 12px;border-radius:999px;letter-spacing:.04em}
+.lh h2{font-size:26px;margin:8px 0 0;color:var(--navy);line-height:1.3}
+.lh .sub{margin:2px 0 0;color:var(--mute)}
+.meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14.5px;color:#3d4a57;background:#f1f5f8;border-radius:8px;padding:10px 14px;margin:0 0 8px}
+h3{font-size:17px;margin:26px 0 10px;color:var(--navy);display:flex;align-items:center;gap:8px}
+h3::before{content:"";width:4px;height:16px;background:var(--teal);border-radius:2px}
+ul{margin:8px 0;padding-left:1.25em}
+li{margin:5px 0;max-width:48em}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th{background:var(--navy);color:#fff;text-align:left;padding:9px 12px;font-weight:600}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:nth-child(even){background:#f8fafb}
+.vocab td.yue{white-space:nowrap;font-size:17px}
+.vocab td.yue b{font-weight:600}
+.pos{color:#8b96a3;font-size:13px}
+.en{color:#4a5663}
+.src{color:var(--t-wai);white-space:nowrap}
+.jpc{border-left:3px solid var(--t-da);min-width:150px}
+.jpc .jp{display:block;font-size:15px;color:var(--ink)}
+.jpc .tag{display:block;font-size:12.5px;color:var(--t-da)}
+.t-同{border-left-color:var(--t-tong)}.t-同 .tag{color:var(--t-tong)}
+.t-粤{border-left-color:var(--t-yue)}.t-粤 .tag{color:var(--t-yue)}
+.t-古{border-left-color:var(--t-gu)}.t-古 .tag{color:var(--t-gu)}
+.t-外{border-left-color:var(--t-wai)}.t-外 .tag{color:var(--t-wai)}
+.t-法{border-left-color:var(--t-fa)}.t-法 .tag{color:var(--t-fa)}
+.jp,i.jp,.w i{font-style:normal;font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace;font-size:.86em;color:#52606d;letter-spacing:-.01em}
+.play{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;border:0;background:#e6f3f1;color:var(--teal);cursor:pointer;vertical-align:middle;margin-right:8px;flex:none}
+.play:hover,.play.on{background:var(--teal);color:#fff}
+.w{cursor:pointer;border-bottom:1px dashed #9fcfc8;white-space:nowrap}
+.w:hover,.w.on{background:#e6f3f1}
+.w b{font-weight:600}
+.dlg{border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.playall{display:flex;align-items:center;gap:6px;width:100%;border:0;border-bottom:1px solid var(--line);background:#f1f5f8;color:var(--navy);font:inherit;font-size:14px;padding:7px 14px;cursor:pointer}
+.playall:hover{background:#e6edf3}
+.line{display:grid;grid-template-columns:30px minmax(0,1.15fr) minmax(0,1fr) 36px;gap:12px;align-items:start;padding:11px 14px;border-bottom:1px solid var(--line)}
+.line:last-child{border-bottom:0}
+.line.on{background:#eef8f6}
+.who{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:13px;font-weight:600;margin-top:2px}
+.line:nth-child(odd) .who{background:var(--teal)}
+.say .yue{font-size:18px;font-weight:600;line-height:1.45}
+.tr{font-size:14.5px;color:#3d4a57}
+.tr .en{font-size:13.5px;color:var(--mute)}
+.line .play{margin:0}
+.scroll{overflow-x:auto}
+.plain td,.plain th{font-size:14.5px}
+.foot{color:var(--mute);font-size:13px;margin-top:40px}
+.pager{display:none}
+.side a.on{color:var(--navy);font-weight:600;border-left-color:var(--teal);background:#e9eef3}
+html{-webkit-text-size-adjust:100%}
+button,.w,a{-webkit-tap-highlight-color:transparent}
+@media screen and (max-width:860px){
+html{scroll-padding-top:104px}
+body{font-size:16px}
+.top{padding:0 12px;height:46px;gap:8px}
+.brand{display:none}
+.top nav{gap:2px;scrollbar-width:none}
+.top nav::-webkit-scrollbar,.side::-webkit-scrollbar{display:none}
+.top nav a{padding:5px 12px;font-size:15px}
+#slow{position:fixed;right:14px;bottom:calc(76px + env(safe-area-inset-bottom));z-index:6;width:52px;height:52px;padding:0;border-radius:50%;border:0;background:var(--navy);color:#fff;font-size:14px;font-weight:600;box-shadow:0 4px 14px rgba(23,50,77,.3)}
+body:not(.single) #slow{bottom:calc(20px + env(safe-area-inset-bottom))}
+.wrap{display:block;padding:0 0 calc(96px + env(safe-area-inset-bottom))}
+.side{position:sticky;top:46px;z-index:4;flex-direction:row;gap:8px;overflow-x:auto;max-height:none;padding:9px 12px;background:var(--bg);border-bottom:1px solid var(--line);scrollbar-width:none}
+.side a{flex:none;white-space:nowrap;border:1px solid var(--line);border-radius:999px;background:#fff;padding:5px 13px;font-size:14px;color:#3d4a57}
+.side a.on{background:var(--navy);border-color:var(--navy);color:#fff}
+main{padding:0 12px}
+h1{font-size:22px;margin:16px 4px 8px}
+main>p{font-size:15px;margin:8px 4px;color:#3d4a57}
+.single main>h1,.single main>p:not(.foot){display:none}
+.single .lesson{display:none}
+.single .lesson.cur{display:block}
+.lesson{padding:18px 14px 14px;margin:12px 0;border-radius:12px}
+.lh{padding-bottom:12px;margin-bottom:12px}
+.lh h2{font-size:22px}
+.meta{flex-direction:column;gap:4px;font-size:14.5px;padding:10px 12px}
+h3{font-size:17px;margin:24px 0 10px}
+ul{padding-left:1.15em}
+li{margin:8px 0}
+.w{white-space:normal}
+.play{width:40px;height:40px;margin-right:10px}
+.play svg{width:19px;height:19px}
+.vocab,.vocab tbody{display:block}
+.vocab thead{display:none}
+.vocab tr{display:grid;grid-template-columns:50px auto minmax(0,1fr);column-gap:0;row-gap:2px;padding:11px 0;border-bottom:1px solid var(--line);background:none!important;position:relative}
+.vocab tr:last-child{border-bottom:0}
+.vocab td{border:0;padding:0}
+.vocab td.yue{grid-column:1/-1;grid-row:1;display:flex;align-items:center;font-size:19px;white-space:normal}
+.vocab td.yue .pos{margin-left:8px}
+.vocab .jpc{border-left:0;min-width:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;grid-column:2/-1;grid-row:2}
+.vocab .jpc .jp{font-size:15px;color:#3d4a57}
+.vocab .jpc .tag{font-size:12px}
+.vocab td:nth-child(2){grid-column:2;grid-row:3;font-size:15px;max-width:46vw}
+.vocab td.en{grid-column:3;grid-row:3;font-size:14px;padding-left:12px;align-self:baseline}
+.dlg{border-radius:12px}
+.playall{padding:12px 14px;font-size:15px;justify-content:center}
+.line{grid-template-columns:28px minmax(0,1fr) 40px;gap:4px 10px;padding:13px 12px}
+.say .yue{font-size:18px}
+.say .jp{font-size:13.5px;line-height:1.5;word-break:break-word}
+.tr{grid-column:2;grid-row:2;font-size:14.5px}
+.line .play{grid-column:3;grid-row:1;margin:0}
+.scroll{margin:0 -14px;padding:0 14px}
+.plain{min-width:560px}
+.plain td,.plain th{font-size:14px;padding:8px 10px}
+.single .pager{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:5;gap:10px;align-items:center;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line)}
+.pager button{flex:1;height:44px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--navy);font:inherit;font-size:15px;font-weight:600}
+.pager button#next{background:var(--navy);border-color:var(--navy);color:#fff}
+.pager button:disabled{opacity:.35}
+.pager span{flex:none;min-width:56px;text-align:center;color:var(--mute);font-size:14px}
+.foot{margin:24px 4px;font-size:12.5px}
+.embed .top{display:none}
+.embed .side{top:0}
+.embed{--embed:1}
+html:has(.embed){scroll-padding-top:58px}
+}
+@page{size:A4;margin:14mm 13mm}
+@media print{*{-webkit-print-color-adjust:exact;print-color-adjust:exact}body{font-size:13px}h1{font-size:24px}.lh h2{font-size:21px}table{font-size:12.5px}.vocab td.yue{font-size:14px}.say .yue{font-size:14.5px}.tr{font-size:12px}.tr .en{font-size:11.5px}.jpc{min-width:120px}h3{break-after:avoid}.lesson{margin:0}.lesson:first-of-type{break-before:auto}.dlg{border:0}.line{grid-template-columns:26px minmax(0,1.15fr) minmax(0,1fr);padding:7px 4px}td,th{padding:6px 9px}.top,.side,.play,.playall,#slow{display:none!important}.wrap{display:block;padding:0}body{background:#fff}.lesson{border:0;padding:0;break-before:page}.w{border:0}tr,.line{break-inside:avoid}}
+</style></head><body>
+<div class="top"><span class="brand">粤语三级课程</span><nav><a href="index.html" class="on">总览</a><a href="trial.html">体验课</a><a href="beginner.html">初级</a><a href="middle.html">中级</a><a href="senior.html">高级</a></nav><button id="slow" aria-pressed="false">慢速</button></div>
+<div class="wrap"><aside class="side"><a href="#s1">一、市面教材调研小结</a><a href="#s2">二、设计原则</a><a href="#s3">三、版式与标记</a><a href="#s4">四、初级 · 开口讲（零基础，20 课）</a><a href="#s5">五、中级 · 讲得顺（有粤语基础，20 课）</a><a href="#s6">六、高级 · 识文化（已能说粤语，20 课）</a><a href="#s7">七、体验课（40 分钟）</a></aside><main><h1>粤语三级课程 · 总览与大纲</h1>
+<p>初级 20 课 · 中级 20 课 · 高级 20 课 · 体验课 1 节（40 分钟）</p>
+<p>粤语 · 普通话 · English · 粤拼 · 词类 · 发音纠正</p>
+<section class="lesson" id="s1"><header class="lh"><h2>一、市面教材调研小结</h2></header>
+<div class="scroll"><table class="plain"><thead><tr><th>来源</th><th>看到的做法</th><th>对本教材的启示</th></tr></thead><tbody><tr><td>高校课程（香港中文大学雅礼中国语文研习所，面向普通话人士的粤语课）</td><td>分初、中、高三级；初级先讲语音、拼写和“普粤语音对比”，再进自我介绍、购物等场景；中级靠小组讨论和多媒体练听说；高级练正式场合与公开演说。配套教材为《粤语速成》初级 / 中级 / 高级三册</td><td>三级结构与本课程一致；“普粤对比”是教普通话母语者最省力的入口，本教材每课的“发音纠正”都按这个思路写</td></tr><tr><td>内地培训机构（线下面授 + 线上，小班与一对一）</td><td>小班先集中讲拼音和发音，一对一再做商务粤语等定制；宣传页很少公开课纲</td><td>机构普遍“先拼音后会话”，前几节枯燥、流失高。本教材改为每课一个场景，拼音拆散到 20 课里逐个纠</td></tr><tr><td>B 站</td><td>付费系统课约 40 多课时，路线是“粤拼 → 声母韵母 → 音变 → 生活会话 → 实景会话”；学习者经验帖常见路线是“先学粤拼（约一周）→ 慢速跟读 → 粤语歌 / 港剧影子跟读”，并反复提到九声六调是最大难点</td><td>保留“慢速跟读 + 录音对比”作为固定课后作业；声调用数字口诀（3 9 4 0 5 2）在第一课就解决</td></tr><tr><td>学习 App（粤语 U 学院、粤语流利说等）</td><td>按“旅游问路、逛街购物、广式美食”等场景组织，闯关制，带真人发音</td><td>场景化是主流，但 App 很少纠音，也基本不讲文化——这正是真人课和本教材高级篇的空间</td></tr><tr><td>小红书</td><td>公开搜索引擎抓不到小红书站内笔记，这一项我没有拿到一手数据（需要登录后在站内搜“粤语教学 / 粤语纠音 / 懒音”核对）</td><td>暂按该平台常见的短内容形态预留：每课的“发音纠正”和“文化小贴士”都写成可单独截出来的一小块，方便你日后剪成笔记</td></tr></tbody></table></div>
+<p>学习者反馈里最集中的三个痛点：声调分不清；课本音与街头实际发音（懒音）有差距；学了拼音却不敢开口。本教材对应的三个设计：数字记调法、专门的懒音辨析课、每课都有可立即使用的场景对话。</p>
+</section>
+<section class="lesson" id="s2"><header class="lh"><h2>二、设计原则</h2></header>
+<p>1. <strong>场景先行</strong>：每课一个真实场景（生活、工作、旅行、逛商场、运动），学完当天能用。</p>
+<p>2. <strong>每课必纠音</strong>：每课只纠一个发音点，全部用“普通话人士最容易错在哪”来讲。</p>
+<p>3. <strong>三语对照</strong>：粤语 · 普通话 · English 并排，版式沿用附件的四栏词表。</p>
+<p>4. <strong>从起源讲起</strong>：初级第 1 课用 5 分钟讲粤语从哪里来；高级第 1–5 课系统讲源流。</p>
+<p>5. <strong>学术上不夸大</strong>：粤语“形成于秦汉、成熟于唐宋”是学界主流说法；“广信是粤语发源地”仍有争议；“粤语就是唐朝官话”属于流行说法，教材里按“保留了较多中古汉语特征”来表述。</p>
+</section>
+<section class="lesson" id="s3"><header class="lh"><h2>三、版式与标记</h2></header>
+<p>词表四栏：<strong>粤语 [词性]｜普通话｜English｜粤拼 · 词类</strong>。注音采用香港语言学学会粤拼（Jyutping），数字 1–6 标声调。粤语用字采用“简体 + 粤语口语字”（如 嘅、咗、喺、唔、冇、佢哋），如需繁体版可一键转换。</p>
+<div class="scroll"><table class="plain"><thead><tr><th>标记</th><th>含义</th><th>例</th></tr></thead><tbody><tr><td>同</td><td>同形词：写法与普通话相同，只是读音不同</td><td><span class="w" data-t="学生" data-a="overview/S03/x01_hok6-saang1.m4a" role="button" tabindex="0"><b>学生</b> <i>hok6 saang1</i></span>、<span class="w" data-t="多谢" data-a="overview/S03/x02_do1-ze6.m4a" role="button" tabindex="0"><b>多谢</b> <i>do1 ze6</i></span></td></tr><tr><td>粤</td><td>粤语特有词：普通话不这么说</td><td><span class="w" data-t="靓" data-a="overview/S03/x03_leng3.m4a" role="button" tabindex="0"><b>靓</b> <i>leng3</i></span>、<span class="w" data-t="嘢" data-a="overview/S03/x04_je5.m4a" role="button" tabindex="0"><b>嘢</b> <i>je5</i></span>、<span class="w" data-t="搞掂" data-a="overview/S03/x05_gaau2-dim6.m4a" role="button" tabindex="0"><b>搞掂</b> <i>gaau2 dim6</i></span></td></tr><tr><td>古</td><td>古汉语留存词：普通话已不用于口语，粤语仍在用</td><td><span class="w" data-t="食" data-a="overview/S03/x06_sik6.m4a" role="button" tabindex="0"><b>食</b> <i>sik6</i></span>、<span class="w" data-t="饮" data-a="overview/S03/x07_jam2.m4a" role="button" tabindex="0"><b>饮</b> <i>jam2</i></span>、<span class="w" data-t="行" data-a="overview/S03/x08_haang4.m4a" role="button" tabindex="0"><b>行</b> <i>haang4</i></span>、<span class="w" data-t="企" data-a="overview/S03/x09_kei5.m4a" role="button" tabindex="0"><b>企</b> <i>kei5</i></span></td></tr><tr><td>外</td><td>外来词：多来自英语</td><td><span class="w" data-t="巴士" data-a="overview/S03/x10_baa1-si2.m4a" role="button" tabindex="0"><b>巴士</b> <i>baa1 si2</i></span> &lt; bus、<span class="w" data-t="士多" data-a="overview/S03/x11_si6-do1.m4a" role="button" tabindex="0"><b>士多</b> <i>si6 do1</i></span> &lt; store</td></tr><tr><td>搭</td><td>搭配 / 表达：整句学、整句用</td><td><span class="w" data-t="唔该晒" data-a="overview/S03/x12_m4-goi1-saai3.m4a" role="button" tabindex="0"><b>唔该晒</b> <i>m4 goi1 saai3</i></span>、<span class="w" data-t="食咗饭未" data-a="overview/S03/x13_sik6-zo2-faan6-mei6.m4a" role="button" tabindex="0"><b>食咗饭未</b> <i>sik6 zo2 faan6 mei6</i></span></td></tr><tr><td>法</td><td>语法成分：体貌、语气词、量词等</td><td><span class="w" data-t="咗" data-a="overview/S03/x14_zo2.m4a" role="button" tabindex="0"><b>咗</b> <i>zo2</i></span>、<span class="w" data-t="紧" data-a="overview/S03/x15_gan2.m4a" role="button" tabindex="0"><b>紧</b> <i>gan2</i></span>、<span class="w" data-t="嘅" data-a="overview/S03/x16_ge3.m4a" role="button" tabindex="0"><b>嘅</b> <i>ge3</i></span>、<span class="w" data-t="啦" data-a="overview/S03/x17_laa1.m4a" role="button" tabindex="0"><b>啦</b> <i>laa1</i></span></td></tr></tbody></table></div>
+<p><strong>声调口诀</strong>：数字 3 9 4 0 5 2 正好是第 1 到第 6 调——<span class="w" data-t="三" data-a="overview/S03/x18_saam1.m4a" role="button" tabindex="0"><b>三</b> <i>saam1</i></span>、<span class="w" data-t="九" data-a="overview/S03/x19_gau2.m4a" role="button" tabindex="0"><b>九</b> <i>gau2</i></span>、<span class="w" data-t="四" data-a="overview/S03/x20_sei3.m4a" role="button" tabindex="0"><b>四</b> <i>sei3</i></span>、<span class="w" data-t="零" data-a="overview/S03/x21_ling4.m4a" role="button" tabindex="0"><b>零</b> <i>ling4</i></span>、<span class="w" data-t="五" data-a="overview/S03/x22_ng5.m4a" role="button" tabindex="0"><b>五</b> <i>ng5</i></span>、<span class="w" data-t="二" data-a="overview/S03/x23_ji6.m4a" role="button" tabindex="0"><b>二</b> <i>ji6</i></span>。</p>
+<p><strong>每课结构</strong>（按 60 分钟设计，可压缩到 45 分钟）：热身复习 5′ → 词汇表 12′ → 情景对话 15′ → 发音纠正 10′ → 角色扮演 / 任务 13′ → 小结与作业 5′。</p>
+</section>
+<section class="lesson" id="s4"><header class="lh"><h2>四、初级 · 开口讲（零基础，20 课）</h2></header>
+<p>目标：学完能读粤拼、听辨六个声调，在餐厅、商场、地铁、酒店、运动场用短句完成基本沟通。约 400 个词。</p>
+<div class="scroll"><table class="plain"><thead><tr><th>课</th><th>主题</th><th>场景</th><th>发音纠正</th><th>语法 / 文化点</th></tr></thead><tbody><tr><td>1</td><td>你好，粤语！</td><td>起源 5 分钟 + 打招呼</td><td>六个声调与数字口诀</td><td>粤语从哪里来</td></tr><tr><td>2</td><td>我系……</td><td>自我介绍</td><td>声母 ng-（我、牙）</td><td>系 / 唔系</td></tr><tr><td>3</td><td>一二三四五</td><td>数字、电话号码</td><td>入声 -p -t -k</td><td>数字意头（8 与 4）</td></tr><tr><td>4</td><td>而家几点？</td><td>时间、日期、约时间</td><td>长 aa 与短 a</td><td>点、个字、半</td></tr><tr><td>5</td><td>我屋企人</td><td>家人与朋友</td><td>n- 与 l-（你、女、男）</td><td>有 / 冇；称谓变调</td></tr><tr><td>6</td><td>去饮茶</td><td>茶楼点心</td><td>圆唇元音 oe / eo</td><td>一盅两件、叩手礼</td></tr><tr><td>7</td><td>一杯冻柠茶</td><td>茶餐厅点餐</td><td>韵尾 -m</td><td>要 / 唔要；走冰少甜</td></tr><tr><td>8</td><td>几多钱？</td><td>便利店、街市买东西</td><td>gw- 与 kw-</td><td>量词 个、件、杯、支</td></tr><tr><td>9</td><td>逛商场（一）</td><td>买衣服、试穿</td><td>韵母 yu</td><td>可唔可以……</td></tr><tr><td>10</td><td>搭地铁</td><td>地铁、巴士、八达通</td><td>z c s 不翘舌</td><td>喺……搭……去……</td></tr><tr><td>11</td><td>请问点去？</td><td>问路</td><td>第 2 调与第 5 调</td><td>方位词</td></tr><tr><td>12</td><td>搭的士去机场</td><td>的士、机场值机</td><td>第 3 调与第 6 调</td><td>要几耐</td></tr><tr><td>13</td><td>酒店 check-in</td><td>酒店入住</td><td>鼻音独立成音节 <i class="jp">m4</i> / <i class="jp">ng5</i></td><td>有冇……；中英夹杂</td></tr><tr><td>14</td><td>帮我影张相</td><td>景点、拍照、买票</td><td>h- 声母（去、开、喜）</td><td>帮我……；好 + 形容词</td></tr><tr><td>15</td><td>运动（一）行山跑步</td><td>约行山、晨跑</td><td>韵尾 -n 与 -ng</td><td>钟意；一齐</td></tr><tr><td>16</td><td>运动（二）健身打波</td><td>健身室、球场</td><td>入声长短（八 / 不）</td><td>识唔识；紧（进行）</td></tr><tr><td>17</td><td>今日好热</td><td>天气、穿衣</td><td>ei / ai / aai</td><td>好、几、太</td></tr><tr><td>18</td><td>我唔舒服</td><td>看医生、药房</td><td>高升变调（茶楼、电话）</td><td>咗（完成）</td></tr><tr><td>19</td><td>返工第一日</td><td>认识同事、办公室</td><td>句末语气词 呀、啦、喎</td><td>同事称呼</td></tr><tr><td>20</td><td>一日游</td><td>综合复习与结业任务</td><td>六调总复习、录音自评</td><td>结业口试</td></tr></tbody></table></div>
+</section>
+<section class="lesson" id="s5"><header class="lh"><h2>五、中级 · 讲得顺（有粤语基础，20 课）</h2></header>
+<p>目标：把句子讲长、讲自然；掌握体貌（咗、紧、过、住）、句末语气词和量词；系统纠正懒音和普通话口音；能应付租房、办事、面试、开会。约 500 个新词。</p>
+<div class="scroll"><table class="plain"><thead><tr><th>课</th><th>主题</th><th>场景</th><th>发音纠正</th><th>语法 / 文化点</th></tr></thead><tbody><tr><td>1</td><td>粤语大家庭</td><td>认识新朋友、聊家乡</td><td>懒音总览（课本音与街头音）</td><td>广州、香港、澳门、海外口音</td></tr><tr><td>2</td><td>约人</td><td>约朋友周末出行</td><td>懒音一：n- → l-</td><td>咗、紧、过</td></tr><tr><td>3</td><td>茶餐厅进阶</td><td>茶记行话点餐</td><td>懒音二：ng- 脱落</td><td>茶走、飞沙走奶</td></tr><tr><td>4</td><td>街市买餸</td><td>菜市场讲价</td><td>懒音三：gw- → g-（国 / 角）</td><td>斤两、平啲啦</td></tr><tr><td>5</td><td>逛商场（二）</td><td>折扣、退换货、会员</td><td>懒音四：-ng → -n</td><td>比较句 A 贵过 B</td></tr><tr><td>6</td><td>网购与外卖</td><td>下单、送货、客服</td><td>懒音五：-k → -t</td><td>畀 字句</td></tr><tr><td>7</td><td>搵楼租屋</td><td>看房、谈租金</td><td>高升变调与高平变调</td><td>呎、按金、包唔包</td></tr><tr><td>8</td><td>银行与电讯</td><td>开户、办手机套餐</td><td>送气与不送气</td><td>要……先至……</td></tr><tr><td>9</td><td>计划旅行</td><td>订机票酒店、排行程</td><td>长句节奏与停顿</td><td>如果……就……</td></tr><tr><td>10</td><td>旅行突发状况</td><td>丢东西、改签、投诉</td><td>语气词的调（㗎、啩、咩）</td><td>被动 畀人……</td></tr><tr><td>11</td><td>运动（三）约波</td><td>约球、球场用语</td><td>连读与合音（乜嘢 → 咩）</td><td>得 / 唔得（能力）</td></tr><tr><td>12</td><td>运动（四）健身跑马拉松</td><td>教练课、报名比赛</td><td>普通话口音：j q x 与翘舌</td><td>住；越……越……</td></tr><tr><td>13</td><td>见工面试</td><td>求职面试</td><td>正式场合的清晰读音</td><td>敬语与自谦</td></tr><tr><td>14</td><td>办公室日常</td><td>开会、跟进项目</td><td>中英夹杂的读法</td><td>港式职场英语词</td></tr><tr><td>15</td><td>电话与讯息</td><td>打电话、留言、语音讯息</td><td>数字与号码的连读</td><td>麻烦你……；转头覆你</td></tr><tr><td>16</td><td>同客食饭</td><td>商务宴请、应酬</td><td>敬酒与客套话的语调</td><td>让座、斟茶礼仪</td></tr><tr><td>17</td><td>睇戏听歌</td><td>聊港产片与粤语歌</td><td>歌词的文读与白读</td><td>文白异读</td></tr><tr><td>18</td><td>过时过节</td><td>新年、中秋、派利是</td><td>吉利话四字词的声调</td><td>意头与禁忌</td></tr><tr><td>19</td><td>讲意见</td><td>表达意见、婉拒、投诉</td><td>语气轻重与礼貌</td><td>不如……；我觉得……</td></tr><tr><td>20</td><td>五分钟演讲</td><td>综合复习与结业演讲</td><td>录音互评</td><td>结业任务</td></tr></tbody></table></div>
+</section>
+<section class="lesson" id="s6"><header class="lh"><h2>六、高级 · 识文化（已能说粤语，20 课）</h2></header>
+<p>目标：从“会讲”到“讲得有根有据”。了解粤语的源流、用字、俗语和广府文化；能用粤语做导览、主持和文化分享。每课以文化专题为主线，配关键词表、正音、讨论与任务。</p>
+<div class="scroll"><table class="plain"><thead><tr><th>课</th><th>专题</th><th>内容要点</th><th>正音 / 语言点</th><th>任务</th></tr></thead><tbody><tr><td>1</td><td>粤语溯源</td><td>百越、秦汉南下、唐宋成熟、明清定型；广信说的争议</td><td>“粤 / 越”与地名读音</td><td>用 2 分钟讲清粤语从哪里来</td></tr><tr><td>2</td><td>粤语里的古汉语</td><td>食、饮、行、企、几时、卒之</td><td>文读与白读</td><td>找 10 个古语词造句</td></tr><tr><td>3</td><td>用粤语读唐诗</td><td>平仄、押韵、入声</td><td>入声 -p -t -k 的朗读</td><td>朗诵一首唐诗</td></tr><tr><td>4</td><td>九声六调</td><td>平上去入、阴阳分调</td><td>九声例字与六调对应</td><td>给名字标调</td></tr><tr><td>5</td><td>粤语字</td><td>本字、借字、新造字（嘅、咗、冇、乜、睇）</td><td>口语字的规范读音</td><td>改写一段口语为书面语</td></tr><tr><td>6</td><td>外来词与中英夹杂</td><td>士多、巴士、波、贴士；港式夹杂</td><td>外来词的声调规律</td><td>外来词溯源表</td></tr><tr><td>7</td><td>歇后语与俗语</td><td>常用歇后语、惯用语</td><td>俗语的节奏</td><td>用俗语讲一件事</td></tr><tr><td>8</td><td>意头与禁忌</td><td>猪脷、通胜、吉屋、伯有</td><td>谐音与避讳</td><td>设计一桌年夜饭菜名</td></tr><tr><td>9</td><td>饮茶文化</td><td>一盅两件、叩手礼、茶位</td><td>点心名称正音</td><td>带朋友饮茶的导览词</td></tr><tr><td>10</td><td>广府饮食</td><td>老火汤、烧味、凉茶、镬气</td><td>饮食词汇正音</td><td>介绍一道家乡菜</td></tr><tr><td>11</td><td>茶餐厅与大排档</td><td>丝袜奶茶、鸳鸯、茶记行话</td><td>行话与数字暗语</td><td>写一张茶记落单纸</td></tr><tr><td>12</td><td>粤剧与南音</td><td>粤剧行当、帝女花、南音</td><td>戏曲念白的咬字</td><td>念一段戏文</td></tr><tr><td>13</td><td>粤语流行曲</td><td>许冠杰、黄霑、林夕；协音填词</td><td>歌词协音</td><td>给一句旋律填词</td></tr><tr><td>14</td><td>港产片与金句</td><td>无厘头、江湖片、经典对白</td><td>对白的语气词</td><td>配音一段对白</td></tr><tr><td>15</td><td>广府节庆</td><td>行花街、龙舟、盂兰、冬至</td><td>节庆用语</td><td>节日主持稿</td></tr><tr><td>16</td><td>骑楼与街巷</td><td>骑楼、西关大屋、唐楼；涌、滘、塱等地名字</td><td>地名特殊读音</td><td>一条街的导览</td></tr><tr><td>17</td><td>生意经与职场</td><td>十三行、打工仔、讲数</td><td>商业行话</td><td>模拟一场谈判</td></tr><tr><td>18</td><td>运动与市井</td><td>龙舟、舞狮、功夫、行山、睇波</td><td>体育解说的节奏</td><td>一分钟赛事解说</td></tr><tr><td>19</td><td>一种粤语，多种口音</td><td>广州、香港、澳门、马来西亚、北美</td><td>口音与用词差异</td><td>用词差异对照表</td></tr><tr><td>20</td><td>粤语的今天</td><td>网络潮语、保育、结业分享</td><td>潮语读法</td><td>5 分钟文化主题演讲</td></tr></tbody></table></div>
+</section>
+<section class="lesson" id="s7"><header class="lh"><h2>七、体验课（40 分钟）</h2></header>
+<p>主题：<strong>“原来你早就识讲粤语”</strong>——从普通话里的粤语词入手，用数字学会六个声调，最后在“茶餐厅”点一杯冻柠茶。详见《04-体验课》。</p>
+</section>
+<p class="foot">发音为电脑合成粤语语音，供跟读参考；纠音以老师示范为准。注音：香港语言学学会粤拼（Jyutping）。</p></main></div>
+<div class="pager"><button id="prev">上一课</button><span id="pos"></span><button id="next">下一课</button></div>
+<script>(function(){
+  var slow=false, cur=null, curEl=null, queue=null;
+  function voice(){
+    var vs=(window.speechSynthesis&&speechSynthesis.getVoices())||[];
+    return vs.find(function(v){return /zh[-_]HK|yue/i.test(v.lang)})||null;
+  }
+  function stop(){
+    if(cur){cur.onended=null;cur.onerror=null;cur.pause();cur=null}
+    if(window.speechSynthesis)speechSynthesis.cancel();
+    if(curEl){curEl.classList.remove('on');var l=curEl.closest('.line');if(l)l.classList.remove('on');curEl=null}
+  }
+  function tts(text,done){
+    if(!window.speechSynthesis){alert('此浏览器不支持语音播放，请用 Chrome、Edge 或 Safari 打开。');done();return}
+    var u=new SpeechSynthesisUtterance(text);u.lang='zh-HK';var v=voice();if(v)u.voice=v;
+    u.rate=slow?0.6:0.9;u.onend=done;u.onerror=done;speechSynthesis.speak(u);
+  }
+  function play(el,done){
+    stop();curEl=el;el.classList.add('on');var l=el.closest('.line');if(l)l.classList.add('on');
+    var fell=false,fin=function(){if(curEl===el)stop();if(done)done()};
+    var fb=function(){if(fell)return;fell=true;cur=null;tts(el.dataset.t,fin)};
+    var a=new Audio();a.preload='auto';a.src='audio/'+el.dataset.a;cur=a;a.playbackRate=slow?0.7:1;
+    a.onended=fin;a.onerror=fb;var p=a.play();if(p&&p.catch)p.catch(fb);
+  }
+  document.addEventListener('click',function(e){
+    var s=e.target.closest('#slow');
+    if(s){slow=!slow;s.setAttribute('aria-pressed',slow);return}
+    var all=e.target.closest('.playall');
+    if(all){var bs=[].slice.call(all.parentNode.querySelectorAll('.line .play'));queue=bs;
+      (function next(){if(queue!==bs||!bs.length)return;var b=bs.shift();play(b,function(){setTimeout(next,350)})})();return}
+    var el=e.target.closest('[data-t]');
+    if(el){queue=null;play(el)}
+  });
+  document.addEventListener('keydown',function(e){
+    if((e.key==='Enter'||e.key===' ')&&e.target.classList&&e.target.classList.contains('w')){e.preventDefault();queue=null;play(e.target)}
+  });
+  if(window.speechSynthesis)speechSynthesis.getVoices();
+  // 手机端：一次只显示一课，底部翻页；?embed=1 隐藏顶栏（内嵌小程序用）
+  var B=document.body, mq=window.matchMedia('(max-width:860px)');
+  if(/[?&]embed=1/.test(location.search))B.classList.add('embed');
+  var secs=[].slice.call(document.querySelectorAll('section.lesson'));
+  var links=[].slice.call(document.querySelectorAll('.side a'));
+  var prev=document.getElementById('prev'),next=document.getElementById('next'),pos=document.getElementById('pos'),idx=0;
+  function single(){return B.classList.contains('single')}
+  function show(i,top){
+    if(!secs.length)return;idx=Math.max(0,Math.min(secs.length-1,i));
+    secs.forEach(function(s,k){s.classList.toggle('cur',k===idx)});
+    links.forEach(function(a,k){a.classList.toggle('on',k===idx)});
+    if(links[idx]&&single()){var a=links[idx],p=a.parentNode;p.scrollLeft=a.offsetLeft-(p.clientWidth-a.offsetWidth)/2}
+    if(prev){prev.disabled=idx===0;next.disabled=idx===secs.length-1;pos.textContent=(idx+1)+' / '+secs.length}
+    if(top&&single()){stop();queue=null;window.scrollTo(0,0)}
+  }
+  function fromHash(){var k=secs.findIndex(function(s){return '#'+s.id===location.hash});return k<0?0:k}
+  function mode(){B.classList.toggle('single',mq.matches&&B.classList.contains('paged'));show(fromHash(),false)}
+  function go(i){if(i<0||i>=secs.length)return;try{history.replaceState(null,'','#'+secs[i].id)}catch(e){}show(i,true)}
+  links.forEach(function(a,k){a.addEventListener('click',function(e){if(single()){e.preventDefault();go(k)}else{show(k,false)}})});
+  if(prev){prev.addEventListener('click',function(){go(idx-1)});next.addEventListener('click',function(){go(idx+1)})}
+  window.addEventListener('hashchange',function(){show(fromHash(),true)});
+  if(mq.addEventListener)mq.addEventListener('change',mode);else if(mq.addListener)mq.addListener(mode);
+  mode();
+})();
+</script></body></html>
